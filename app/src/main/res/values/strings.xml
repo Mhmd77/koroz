@@ -1,0 +1,11 @@
+<resources>
+    <string name="google_api_key">AIzaSyCWwmZuKps4xNjr2thoV_mlo-wBoqfHbkc</string>
+    <string name="app_name">کروز</string>
+    <string name="intro_text">Intro</string>
+    <string name="action_settings">settings</string>
+    <string name="title_chart">نمودار</string>
+    <string name="title_leader_board">امتیازات</string>
+    <string name="title_home">خانه</string>
+    <string name="win_title">شما برنده شدید!</string>
+    <string name="loose_title">شما بازنده شدید!</string>
+</resources>

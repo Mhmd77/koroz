@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+        android:id="@+id/powerBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:indeterminate="false"
+        android:max="100"
+        app:backgroundColor="@color/lightPurple"
+        app:isRounded="true"
+        app:layout_constraintEnd_toStartOf="@id/txtPower"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:progressColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.6"
+        android:fontFamily="@font/font_head"
+        android:text="قدرت"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="@id/powerBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/powerBar"
+        app:layout_constraintTop_toTopOf="@id/powerBar" />
+
+
+    <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+        android:id="@+id/healthBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="100"
+        app:backgroundColor="@color/lightPurple"
+        app:isRounded="true"
+        app:layout_constraintEnd_toStartOf="@id/txtPower"
+        app:layout_constraintStart_toStartOf="@id/powerBar"
+        app:layout_constraintTop_toBottomOf="@id/powerBar"
+        app:progressColor="@color/colorPrimaryDark" />
+
+    <TextView
+        android:id="@+id/txtHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.6"
+        android:fontFamily="@font/font_head"
+        android:text="جون"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="@id/healthBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/healthBar"
+        app:layout_constraintTop_toTopOf="@id/healthBar" />
+
+    <com.sasank.roundedhorizontalprogress.RoundedHorizontalProgressBar
+        android:id="@+id/speedBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:indeterminate="false"
+        android:max="100"
+        app:backgroundColor="@color/lightPurple"
+        app:layout_constraintEnd_toStartOf="@id/txtSpeed"
+        app:layout_constraintStart_toStartOf="@id/healthBar"
+        app:layout_constraintTop_toBottomOf="@id/healthBar"
+        app:progressColor="@color/colorPrimaryDark"
+        app:rcBackgroundColor="@color/colorPrimary"
+        app:rcBackgroundPadding="4dp"
+        app:rcMax="100"
+        app:rcProgress="60"
+        app:rcProgressColor="@color/colorPrimaryDark"
+        app:rcRadius="6dp"
+        app:rcReverse="false" />
+
+    <TextView
+        android:id="@+id/txtSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.6"
+        android:fontFamily="@font/font_head"
+        android:text="سرعت"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        app:layout_constraintBottom_toBottomOf="@id/speedBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/speedBar"
+        app:layout_constraintTop_toTopOf="@id/speedBar" />
+
+
+</android.support.constraint.ConstraintLayout>
